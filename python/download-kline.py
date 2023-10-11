@@ -97,6 +97,7 @@ if __name__ == "__main__":
     if not args.symbols:
       print("fetching all symbols from exchange")
       symbols = get_all_symbols(args.type)
+      print(symbols)
       num_symbols = len(symbols)
     else:
       symbols = args.symbols
